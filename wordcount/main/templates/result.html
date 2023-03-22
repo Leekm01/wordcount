@@ -1,0 +1,17 @@
+<body>
+    <h1>결과</h1>
+    {% for word,value in words %} 
+        <p>단어: {{word}}: 개수:{{value}}</p>
+        <br>
+    {% endfor%}
+
+
+    <a href={% url 'main' %}>메인페이지로</a>
+</body>
+
+<style>
+    body{
+        text-align: center;
+    }
+
+</style>
